@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h3>Student Registration Form Using Table HTML</h3>
+    </header>
+    <main>
+      <table>
+        <tr>
+          <td>
+            <p>First Name</p>
+          </td>
+          <td>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              minlength="3"
+              maxlength="10"
+            />
+          </td>
+          <td>
+            <p>Max 30 Characters Allowed</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Last Name</p>
+          </td>
+          <td>
+            <input
+              type="text"
+              id="LastName"
+              name="LastName"
+              required
+              minlength="6"
+              maxlength="30"
+            />
+          </td>
+          <td>
+            <p>Max 30 Characters Allowed</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Email ID</p>
+          </td>
+          <td>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              minlength="8"
+            />
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Mobile Number</p>
+          </td>
+          <td>
+            <input
+              type="tel"
+              id="tel"
+              name="tel"
+              required
+              minlength="9"
+              maxlength="12"
+            />
+          </td>
+          <td>
+            <p>10 Digits Allowed</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Gender</p>
+          </td>
+          <td>
+            <input type="radio" name="gender" id="male" />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" />
+            <label for="female">Female</label>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Date of Birth(DOB)</p>
+          </td>
+          <td>
+            <input type="date" id="date" name="date" value="2023-06-20" />
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Address</p>
+          </td>
+          <td>
+            <textarea
+              name="Address"
+              id="address"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <p>City</p>
+          </td>
+          <td>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              required
+              minlength="3"
+              maxlength="30"
+            />
+          </td>
+          <td>
+            <p>Max 30 Characters Allowed</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Pin Code</p>
+          </td>
+          <td>
+            <input
+              type="password"
+              name="pin"
+              id="pin"
+              required
+              minlength="6"
+              maxlength="6"
+            />
+          </td>
+          <td>
+            <p>6 Digits Allowed</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>State</p>
+          </td>
+          <td>
+            <input
+              type="text"
+              id="state"
+              name="state"
+              required
+              minlength="3"
+              maxlength="30"
+            />
+          </td>
+          <td>
+            <p>Max 30 Characters Allowed</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Country</p>
+          </td>
+          <td>
+            <input type="text" name="country" id="country" />
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Hobbies</p>
+          </td>
+          <td>
+            <input type="checkbox" name="drawing" id="drawing" />
+            <label for="drawing">Drawing</label>
+            <input type="checkbox" name="shoping" id="shoping" />
+            <label for="shoping">Shoping</label>
+            <input type="checkbox" name="sketching" id="sketching" />
+            <label for="sketching">Sketching</label>
+            <input type="checkbox" name="dancing" id="dancing" />
+            <label for="dancing">Dancing</label>
+            <input type="checkbox" name="chothers" id="chothers" />
+            <label for="chothers">Others</label>
+            <input
+              type="others"
+              name="others"
+              id="others"
+              required
+              maxlength="30"
+            />
+            <p>Max 30 Characters Allowed</p>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Qualification</p>
+          </td>
+          <td>
+            <div>
+              <input type="checkbox" name="High-School" id="High-School" />
+              <label for="High-School">High-School(10th)</label>
+            </div>
+            <div>
+              <input type="checkbox" name="Higher-School" id="Higher-School" />
+              <label for="Higher-School">Higher-School(12th)</label>
+            </div>
+            <div>
+              <input type="checkbox" name="Graduation" id="Graduation" />
+              <label for="Graduation">Graduation(Bachelors)</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="Post-Graduation"
+                id="Post-Graduation"
+              />
+              <label for="Post-Graduation">Post-Graduation(Masters)</label>
+            </div>
+            <div>
+              <input type="checkbox" name="PHD" id="PHD" />
+              <label for="PHD">PHD</label>
+            </div>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Courses Applied for</p>
+          </td>
+          <td>
+            <div>
+              <input type="radio" name="BCA" id="BCA" />
+              <label for="BCA">BCA( Lorem ipsum dolor sit. )</label>
+            </div>
+            <div>
+              <input type="radio" name="B.com" id="B.com" />
+              <label for="B.com">B.com( Lorem ipsum dolor sit. )</label>
+            </div>
+            <div>
+              <input type="radio" name="B.sc" id="B.sc" />
+              <label for="B.sc">B.sc( Lorem ipsum dolor sit. )</label>
+            </div>
+            <div>
+              <input type="radio" name="BA" id="BA" />
+              <label for="BA">BA( Lorem ipsum dolor sit. )</label>
+            </div>
+            <div>
+              <input type="radio" name="MCA" id="MCA" />
+              <label for="MCA">MCA( Lorem ipsum dolor sit. )</label>
+            </div>
+            <div>
+              <input type="radio" name="M.com" id="M.com" />
+              <label for="M.com">M.com( Lorem ipsum dolor sit. )</label>
+            </div>
+            <div>
+              <input type="radio" name="M.sc" id="M.sc" />
+              <label for="M.sc">M.sc( Lorem ipsum dolor sit. )</label>
+            </div>
+            <div>
+              <input type="radio" name="MA" id="MA" />
+              <label for="MA">MA( Lorem ipsum dolor sit. )</label>
+            </div>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td id="buttons">
+            <input type="button" value="Submit" />
+            <input type="button" value="Reset" />
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </main>
+  </body>
+</html>
